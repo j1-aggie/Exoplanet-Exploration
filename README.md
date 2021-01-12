@@ -18,6 +18,18 @@ For this homework I used the following classification models.
 
 I first determined the feature importances by running "Decision Tree" and "Random Forest" models.  The features that showed the most promise were: 'koi_fpflag_co', 'koi_fpflag_nt', 'koi_fpflag_ss', 'koi_model_snr', 'koi_prad', 'koi_prad_err2', 'koi_duration_err2'.  Then I used the features to train the K Nearest Neighbors and SVC models while using GridSearchCV to hypertune the models and performance. Once I had the models, they were then saved in the "code" file in two different formats. 
 
+### Preprocess the Data
+
+* Preprocessed the dataset prior to fitting the model.
+* Performed feature selection and removed unnecessary features.
+* Used `MinMaxScaler` to scale the numerical data.
+* Separated the data into training and testing data.
+
+### Tune Model Parameters
+
+* Used `GridSearch` to tune model parameters.
+* Tuned and compared at least two different classifiers.
+
 ## Performance
 
 ## SVC
@@ -28,26 +40,15 @@ SVC appears to be the better choice for potential planet classification, having 
 
 ## K Nearest Neighbors
 
-![knn.png](images/knn.jpg)
+![knn.png](images/KNN.jpg)
+Achieved model accuracy of 0.866 with k=15, using important features identified by the Random Forest model.  The K Nearest Neighbors model is much faster than SVC, which may make it a better model to use on larger datasets. However, for this dataset (which is relatively small), speed is not as much of an issue.  While the model accuracy is slightly higher overall, the precision for classifying different planet types indicated in the classification_report is lower.
 
-
-## Instructions
-
-### Preprocess the Data
-
-* Preprocess the dataset prior to fitting the model.
-* Perform feature selection and remove unnecessary features.
-* Use `MinMaxScaler` to scale the numerical data.
-* Separate the data into training and testing data.
-
-### Tune Model Parameters
-
-* Use `GridSearch` to tune model parameters.
-* Tune and compare at least two different classifiers.
 
 ### Reporting
 
-* Create a README that reports a comparison of each model's performance as well as a summary about your findings and any assumptions you can make based on your model (is your model good enough to predict new exoplanets? Why or why not? What would make your model be better at predicting new exoplanets?).
+* As you can see in the descriptions of the two models that I ran through, the SVC model is the best and most accurate model to use.  Even though this model takes a little longer to run than the KNN model, it yields better results.  I only used GridSearchCV on the SVC model as it showed the most accuracy.  I feel that the model could be used to predict new exoplanets with a high degree of certainity if more fine tuned models and interations were ran in conjuction to determine a better degree of accuracy. 
+
+n make based on your model (is your model good enough to predict new exoplanets? Why or why not? What would make your model be better at predicting new exoplanets?).
 
 - - -
 
@@ -61,32 +62,3 @@ SVC appears to be the better choice for potential planet classification, having 
 
 * [Grid Search](https://scikit-learn.org/stable/modules/grid_search.html)
 
-- - -
-
-## Hints and Considerations
-
-* Start by cleaning the data, removing unnecessary columns, and scaling the data.
-
-* Not all variables are significant be sure to remove any insignificant variables.
-
-* Make sure your `sklearn` package is up to date.
-
-* Try a simple model first, and then tune the model using `GridSearch`.
-
-* When hyper-parameter tuning, some models have parameters that depend on each other, and certain combinations will not create a valid model. Be sure to read through any warning messages and check the documentation
-
-- - -
-
-## Submission
-
-* Create a Jupyter Notebook for each model and host the notebooks on GitHub.
-
-* Create a file for your best model and push to GitHub
-
-* Include a README.md file that summarizes your assumptions and findings.
-
-* Submit the link to your GitHub project to Bootcamp Spot.
-
-* Ensure your repository has regular commits (i.e. 20+ commits) and a thorough README.md file
-
-##### © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
