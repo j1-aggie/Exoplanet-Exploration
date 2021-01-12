@@ -10,10 +10,10 @@ This repository contains two folders named "data" and "code".  The data folder c
 ### Selecting The Models
 
 For this homework I used the following classification models. 
-    *   Decision Tree Classifier
-    *   Random Forest Classifier
-    *   SVC (a type of Support Vector Machine) 
-    *   K Nearest Neighbor (KNN)
+*   Decision Tree Classifier
+*   Random Forest Classifier
+*   SVC (a type of Support Vector Machine) 
+*   K Nearest Neighbor (KNN)
 
 ## Preparing The Models
 
