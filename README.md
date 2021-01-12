@@ -35,15 +35,15 @@ I first determined the feature importances by running "Decision Tree" and "Rando
 
 ## SVC
 
-![svc.png](images/svc.jpg)![SVC](https://user-images.githubusercontent.com/66078772/104264720-c76fa900-5451-11eb-8aa6-9c7d8df36758.PNG)
+![SVC](https://user-images.githubusercontent.com/66078772/104264720-c76fa900-5451-11eb-8aa6-9c7d8df36758.PNG)
 
-Model accuracy began at ~0.64. Using only important features identified by the Random Forest model, it improved to 0.887. This was achieved using a train-test split of 80-20 and the default SVC kernel (rbf). Using linear and poly kernel settings were resource and time intensive.
+*  Model accuracy began at ~0.64. Using only important features identified by the Random Forest model, it improved to 0.887. This was achieved using a train-test split of 80-20 and the default SVC kernel (rbf). Using linear and poly kernel settings were resource and time intensive.
 SVC appears to be the better choice for potential planet classification, having especially high precision for identifying false positives.
 
 ## K Nearest Neighbors
 
 ![KNN](https://user-images.githubusercontent.com/66078772/104264732-ca6a9980-5451-11eb-872e-ab64c17f9fea.PNG)
-Achieved model accuracy of 0.866 with k=15, using important features identified by the Random Forest model.  The K Nearest Neighbors model is much faster than SVC, which may make it a better model to use on larger datasets. However, for this dataset (which is relatively small), speed is not as much of an issue.  While the model accuracy is slightly higher overall, the precision for classifying different planet types indicated in the classification_report is lower.
+*  Achieved model accuracy of 0.866 with k=15, using important features identified by the Random Forest model.  The K Nearest Neighbors model is much faster than SVC, which may make it a better model to use on larger datasets. However, for this dataset (which is relatively small), speed is not as much of an issue.  While the model accuracy is slightly higher overall, the precision for classifying different planet types indicated in the classification_report is lower.
 
 
 ### Reporting
