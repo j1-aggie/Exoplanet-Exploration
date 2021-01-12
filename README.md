@@ -63,4 +63,3 @@ SVC appears to be the better choice for potential planet classification, having 
 * [Scikit-Learn Tutorial Part 2](https://www.youtube.com/watch?v=gK43gtGh49o&t=5858s)
 
 * [Grid Search](https://scikit-learn.org/stable/modules/grid_search.html)
-
