@@ -50,7 +50,7 @@ SVC appears to be the better choice for potential planet classification, having 
 
 * As you can see in the descriptions of the two models that I ran through, the SVC model is the best and most accurate model to use.  Even though this model takes a little longer to run than the KNN model, it yields better results.  I only used GridSearchCV on the SVC model as it showed the most accuracy.  I feel that the model could be used to predict new exoplanets with a high degree of certainity if more fine tuned models and interations were ran in conjuction to determine a better degree of accuracy. 
 
-n make based on your model (is your model good enough to predict new exoplanets? Why or why not? What would make your model be better at predicting new exoplanets?).
+
 
 - - -
 
