@@ -5,7 +5,7 @@
 
 This project explores different machine learning models to determine which may be best to identify exoplanents from NASA data.
 
-This repository contains two folders named "data" and "code".  The data folder contains the csv data used to feed the models and the code folder contains four jupyter notebooks, one for each model.  To run these models you will need pandas, scikit-learn, gridsearch, and matplotlib installed on your computer. 
+This repository contains three folders named "images", "data" and "code".  The data folder contains the csv data used to feed the models and the code folder contains five jupyter notebooks, one for each model.  To run these models you will need pandas, scikit-learn, gridsearch, and matplotlib installed on your computer. 
 
 ### Selecting The Models
 
@@ -14,6 +14,7 @@ For this homework I used the following classification models.
 *   Random Forest Classifier
 *   SVC (a type of Support Vector Machine) 
 *   K Nearest Neighbor (KNN)
+*   Logistic Regression
 
 ## Preparing The Models
 
